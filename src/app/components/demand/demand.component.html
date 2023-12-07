@@ -1,1 +1,35 @@
-<p>demand works!</p>
+<section class="content">
+    <div class="body_scroll">
+        <div class="container-fluid">
+            <!-- <div class="row clearfix">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6" *ngFor="let equipment of equipments">
+                    <div class="card">
+                        <div class="body product_item">
+                            <img src="" alt="Product" class="img-fluid cp_img" />
+                            <div class="product_details">
+                                <a href="ec-product-detail.html">{{ equipment.name }}</a>
+                                <ul class="product_price list-unstyled">
+                                    <li class="old_price">{{ equipment.equipmentFamilyId }}</li>
+                                    <li class="new_price">{{ equipment.quantity }}</li>
+                                </ul>                                
+                            </div>
+                            <div class="action">
+                                <a href="javascript:void(0);" class="btn btn-info waves-effect"><i class="zmdi zmdi-eye"></i></a>
+                                <a href="javascript:void(0);" class="btn btn-primary waves-effect">ADD TO CART</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div> -->
+            <form (submit)="onSubmit()">
+                <p>name</p>
+                <input type="text" name="name">
+                <p>quantity</p>
+                <input type="number" name="quantity">
+                <p>Family id</p>
+                <input type="number" name="family_id">
+                <button type="submit">save</button>
+          </form>
+        </div>               
+    </div>
+</section>
