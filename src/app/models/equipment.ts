@@ -1,15 +1,19 @@
 export interface Equipment {
-    id?: number;
-    name?: string;
-    quantity?: number;
-    equipmentFamilyId?: number;
+    name?: string,
+    price ?: string,
+    modelName ?: string,
+    familyName?: string,
+    description ?: string,
+    serialNumber?: string ,
 }
 
 export class CEquipment implements Equipment {
     constructor(
-        public id?: number,
         public name?: string,
-        public quantity?: number,
-        public equipmentFamilyId?: number,
+        public price ?: string,
+        public modelName ?: string,
+        public familyName?: string,
+        public description ?: string,
+        public serialNumber?: string
     ){}
 }

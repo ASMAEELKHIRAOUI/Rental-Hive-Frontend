@@ -2,7 +2,7 @@ import { Demand } from '../../models/demand';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
-import { ResponseModel } from '../../core/request/response.model';
+// import { ResponseModel } from '../../core/request/response.model';
 
 const httpOptions = {
   headers: new HttpHeaders({'Content-type' : 'application/json'})
@@ -24,8 +24,8 @@ export class DemandService {
     )
   }
 
-  addDemand(demand: Demand): Observable<ResponseModel<Demand>>{
-    return this.http.post<ResponseModel<Demand>>(this.apiUrl, demand);
+  addDemand(demand: Demand): Observable<Demand>{
+    return this.http.post<Demand>(this.apiUrl, demand);
   }
 
 }

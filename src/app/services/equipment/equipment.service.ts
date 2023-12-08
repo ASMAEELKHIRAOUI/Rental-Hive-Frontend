@@ -20,7 +20,7 @@ export class EquipmentService {
 
   getEquipments(): Observable<Equipment[]>{
     return this.http.get<Equipment[]>(this.apiUrl).pipe(
-        map((res: any) => res.result)
+        map((res: any) => res.data)
     )
   }
 

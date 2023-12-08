@@ -28,7 +28,7 @@ export class EquipmentComponent {
   onSubmit(){
     this.equipmentService.addEquipments(this.toSave).subscribe({
       next: data => {
-        this.onSuccessSave(data?.result);
+        this.onSuccessSave(data?.data);
       },
       error: (err)=>{console.log(err)}
     })

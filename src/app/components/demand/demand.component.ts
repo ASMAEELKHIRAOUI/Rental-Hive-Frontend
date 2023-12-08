@@ -24,7 +24,7 @@ export class DemandComponent {
   onSubmit(){
     this.demandService.addDemand(this.toSave).subscribe({
       next: data => {
-        this.onSuccessSave(data?.result);
+        this.onSuccessSave(data);
       },
       error: (err) =>{console.log(err)}
     })
